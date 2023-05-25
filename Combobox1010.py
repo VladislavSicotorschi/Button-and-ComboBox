@@ -21,3 +21,9 @@ comboBox = ttk.Combobox(root, values=items)
 
 #bind combo box object to the selector event
 comboBox.bind("<<ComboboxSelected>>", onSelect)
+
+#pack the combo box
+comboBox.pack()
+
+#code to keep window open always
+root.mainloop()
